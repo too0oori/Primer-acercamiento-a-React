@@ -6,9 +6,28 @@ body {
   place-content: center;
   min-height: 100vh;
 }
+  /* ATAJO para: justify-content + align-content = center
+     Centra TODO el contenido horizontal Y verticalmente */
 
 .App {
   display: flex;
   flex-direction: column;
   gap: 8px;
 }
+/* Se aplica a <section className='App'> en App.jsx */
+
+/* Resumen
+
+   body (toda la pantalla)
+     ↓ 
+    usa Grid para centrar todo
+     ↓
+   .App (el contenedor)
+     ↓ 
+    usa Flexbox en columna
+     ↓
+   TwitterFollowCard 1
+   ↓ 
+   gap: 8px
+   TwitterFollowCard 2
+*/
